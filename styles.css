@@ -1,0 +1,107 @@
+body {
+    max-width: 650px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    height: 400px;
+    margin-top: 5%;
+}
+
+footer {
+    display: flex;
+    height: 400px;
+}
+
+.img-container {
+    margin: auto;
+}
+
+img {
+    object-fit: contain;
+    width: 300px;
+}
+
+.name-text {
+    text-align: center;
+}
+
+.about-me-div {
+    margin: auto 5%;
+}
+
+main {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projects {
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.screenshots {
+    height: 150px;
+
+    text-align: center;
+    line-height: 150px;
+}
+
+.screenshot-text {
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.project-descriptions {
+    margin-left: 5%;
+}
+
+.contact-me-div {
+    margin: auto 5%;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        width: 250px;
+    }
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    .header-img {
+        margin: auto;
+    }
+    .about-me-div {
+        text-align: center;
+        height: auto;
+    }
+    .my-work-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 5%;
+    }
+    .projects {
+        width: 350px;
+    }
+    .contact-me-div {
+        text-align: center;
+    }
+    .footer-img {
+        display: none;
+    }
+}
